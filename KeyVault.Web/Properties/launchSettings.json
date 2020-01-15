@@ -12,7 +12,7 @@
       "commandName": "IISExpress",
       "launchBrowser": true,
       "environmentVariables": {
-        "KEYVAULT_ENDPOINT": "https://nimccollfta-kv1.vault.azure.net/",
+        "KEYVAULT_ENDPOINT": "https://{your keyvault name}.vault.azure.net/",
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
