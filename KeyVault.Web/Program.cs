@@ -32,6 +32,7 @@ namespace KeyVault.Web
                 var keyVaultEndpoint = GetKeyVaultEndpoint();
                 if (!string.IsNullOrEmpty(keyVaultEndpoint))
                 {
+                    // Authenticate to Key Vault using the application's managed identity
                     var azureServiceTokenProvider = new AzureServiceTokenProvider();
                     var keyVaultClient = new KeyVaultClient(
                         new KeyVaultClient.AuthenticationCallback(

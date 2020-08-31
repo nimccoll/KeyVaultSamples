@@ -1,0 +1,30 @@
+{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:8506",
+      "sslPort": 44326
+    }
+  },
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "CLIENT_SECRET": "{your Client Secret}",
+        "KEYVAULT_ENDPOINT": "https://{your keyvault name}.vault.azure.net/",
+        "CLIENT_ID": "{your Client ID}",
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "KeyVault.WebNoMSI": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:5001;http://localhost:5000"
+    }
+  }
+}
